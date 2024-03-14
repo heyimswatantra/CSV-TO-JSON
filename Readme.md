@@ -126,7 +126,6 @@ Retrieves all users from the PostgreSQL database.
       "address": "{\"line1\":\"123 Main Street\",\"line2\":\"Apartment 2A\",\"city\":\"New York\",\"state\":\"NY\"}",
       "additional_info": "{\"additional_info\":\"reading\\r\"}"
     },
-    ...
   ],
   "message": "All Users fetched successfully",
   "success": true
