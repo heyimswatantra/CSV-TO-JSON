@@ -28,7 +28,7 @@ To install and run CSV-TO-JSON, follow these steps:
 ```bash
    npm install
 ```
-4. Set up your PostgreSQL database and configure the connection details in the .env (use .env.sample file as reference)
+4. Set up your PostgreSQL database and configure the connection details in thea new .env file (use .env.sample file as reference)
 
 5. Run the application:
 ```bash
@@ -39,11 +39,17 @@ To install and run CSV-TO-JSON, follow these steps:
 
 ### 2. Usage
 
-- Prepare your CSV file(s) to be converted.
+1. **Create Table:**
+   - First, make a `POST` request to `http://localhost:8000/api/v1/create_table`.
 
-- Place the CSV file(s) in the csv_files directory.
+2. **Process CSV:**
+   - After creating the table, make a `POST` request to `http://localhost:8000/api/v1/process_csv`.
 
-- Run the application as described in the installation steps.
+3. **View Age Distribution:**
+   - Once the CSV is processed and data is inserted into the database, you can view the age distribution by making a `GET` request to `http://localhost:8000/api/v1/age_distribution`.
+
+5. **View All Users:**
+   - Similarly, you can view all users in the database by making a `GET` request to `http://localhost:8000/api/v1/users`.
 
 - Once the conversion is complete, the JSON data will be stored in your PostgreSQL database.
 
@@ -51,7 +57,7 @@ To install and run CSV-TO-JSON, follow these steps:
 
 ### 3. Features
 
-- Converts CSV files to JSON format.
+- Converts CSV file to JSON format.
 - Stores converted JSON data in a PostgreSQL database.
 - Easily configurable connection to the PostgreSQL database.
 
