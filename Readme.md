@@ -62,7 +62,7 @@ To install and run CSV-TO-JSON, follow these steps:
 #### Create Table
  Creates a table in the PostgreSQL database based on the provided schema.
 
-- **URL** : /api/v1/create_table
+- **URL** : /api/v1/create-table
 - Method: POST
 
 - Example response: 
@@ -80,7 +80,7 @@ To install and run CSV-TO-JSON, follow these steps:
 #### Process CSV
 Processes a CSV file and inserts its data into the specified PostgreSQL table.
 
-- URL: /api/v1/process_csv
+- URL: /api/v1/process-csv
 - Method: POST
 - Example Response:
 ```json
@@ -130,7 +130,7 @@ Retrieves all users from the PostgreSQL database.
 #### Age Distribution
 Calculates and retrieves the age distribution of users from the PostgreSQL database.
 
-- URL: /api/v1/age_distribution
+- URL: /api/v1/age-distribution
 - Method: GET
 - Example Response:
 ```json

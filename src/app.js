@@ -2,7 +2,7 @@ import express from "express"
 import cors from "cors"
 import userRoute from "./routes/user.route.js"
 import ageDistributionRoute from "./routes/age_distribution.route.js"
-import processCsvRoute from "./routes/processCsv.route.js"
+import processCsvRoute from "./routes/process_csv.route.js"
 import createTableRoute from "./routes/create_table.route.js"
 
 const app = express()
@@ -18,9 +18,9 @@ app.get("/", (req, res) => {
 
 app.use(express.json())
 
-app.use('/api/v1/create_table', createTableRoute);
+app.use('/api/v1/create-table', createTableRoute);
 app.use("/api/v1/users", userRoute);
-app.use("/api/v1/age_distribution", ageDistributionRoute);
-app.use('/api/v1/process_csv', processCsvRoute);
+app.use("/api/v1/age-distribution", ageDistributionRoute);
+app.use('/api/v1/process-csv', processCsvRoute);
 
 export default app
