@@ -3,7 +3,7 @@ import { processCsv } from "../controllers/process_csv.controller.js"
 
 const router = Router();
 
-router.get("/", processCsv)
+router.post("/", processCsv)
 
 
 export default router;

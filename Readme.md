@@ -63,7 +63,7 @@ To install and run CSV-TO-JSON, follow these steps:
  Creates a table in the PostgreSQL database based on the provided schema.
 
 - **URL** : /api/v1/create_table
-- Method: GET
+- Method: POST
 
 - Example response: 
 ```json
@@ -81,7 +81,7 @@ To install and run CSV-TO-JSON, follow these steps:
 Processes a CSV file and inserts its data into the specified PostgreSQL table.
 
 - URL: /api/v1/process_csv
-- Method: GET
+- Method: POST
 - Example Response:
 ```json
 {
